@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us of BLOGPOST </title>
+   
+    <style>
+        /* Your CSS styles */
+        .about-section {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .column {
+            flex: 0 0 auto;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 600px; /* Adjust this value as needed */
+            border: 1px solid #151414;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .container {
+            flex: 1;
+            margin-left: 20px; /* Adjust this value as needed */
+        }
+
+        .container h2,
+        .container p {
+            margin: 0;
+        }
+
+        /* Responsive layout */
+        @media screen and (max-width: 768px) {
+            .card {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .container {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="about-section">
+        <h1 style="text-align:center"><b>ABOUT US</b> </h1>
+        <p style="text-align:center">Some text about who we are and what we do.</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                {% load static %}
+                <img src="{% static 'aakankshya.jpg' %}" alt="Ambika" style="width:30%;height: 50%;"  >
+                <div class="container">
+                    <h2>Ambika Thapa</h2>
+                    <p class="title">Student of the Edmark college</p>
+                    <p class="title">BCA, Seventh semester</p>
+                    <a href="mailto:ambikathapa@gmail.com" target="_blank"><p id="email">ambikathapa@gmail.com</p></a>
+                    <p><button class="button">Contact : 9854245353</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<p style="text-align:center"> Thank you for visiting the page!!!!<br>
+Please, feel free to contact us if any query....</p>
+</body>
+</html>

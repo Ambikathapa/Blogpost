@@ -1,0 +1,102 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOGPOST</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+    .home-section {
+    padding: 2px;
+    text-align: center;
+    background-color: #6793f4;
+    color: white;
+  }
+  .navbar {
+          /* background-color: rgb(235, 225, 225); */
+          position:-webkit-sticky; /* Make it stick/fixed */
+          top:50px; /* Stay on top */
+          width: 30%; 
+          
+        
+         }
+
+         .navbar a { 
+          /* display: block; */
+
+            float: left; 
+            color: #850808;
+            text-align: left;
+            padding: 6px ;
+            text-decoration: none;
+           font-size: 15px;
+          
+        }
+        
+         .navbar a:hover{
+          background-color: #ddd;
+          color: black;
+             }
+
+             
+             
+.container .btn {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+        
+            
+
+</style>
+
+  
+<body>
+    <div class="home-section">
+        <div class="navbar">
+            
+            <a href="about.html">ABOUT US </a>
+             <a href="POST.html">POST</a>
+            <a href="CATEGORY.html">CATEGORY</a>
+           
+        </div>
+       
+        <font size="5.5">
+            <h1 style="text-align:center">BLOGPOST </h1> 
+        </font>
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+ </div>
+
+ <div class="container">
+    {% load static %}
+    <!-- <img src="{% static 'lakecity.jpg' %}" alt="Pokhara" width="100%" height="585"> -->
+    <a href ="readmore.html"> <button class="btn">READ MORE</button></a>
+   
+  </div>
+              
+</body>
+</html>
